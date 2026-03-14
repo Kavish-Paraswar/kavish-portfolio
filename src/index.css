@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+
+/* ═══════════════════════════════════════════════════
+   THEME TOKENS — Light Mode (default)
+   ═══════════════════════════════════════════════════ */
+:root {
+  /* — Backgrounds — */
+  --bg: #EAD1B0;
+  --bg-deep: #D6BA95;
+  --surface: #F4DFC4;
+  --card: #FFF7ED;
+
+  /* — Text — */
+  --text: #3B2A1A;
+  --text-secondary: #6A4E3B;
+  --muted: #8C6A4F;
+
+  /* — Accent / Brand — */
+  --accent: #D77A3D;
+  --accent-hover: #C7642B;
+  --highlight: #F2B279;
+  --accent-glow: rgba(215, 122, 61, 0.25);
+
+  /* — Borders & Shadows — */
+  --border: #D6BA95;
+  --shadow: rgba(0, 0, 0, 0.08);
+
+  /* — Glass — */
+  --glass-bg: rgba(244, 223, 196, 0.6);
+  --glass-border: rgba(214, 186, 149, 0.5);
+
+  /* — Timeline & Career colours — */
+  --timeline-color: #D77A3D;
+  --timeline-glow: #F2B279;
+  --timeline-dot-bg: #D77A3D;
+  --timeline-dot-shadow1: rgba(215, 122, 61, 0.6);
+  --timeline-dot-shadow2: rgba(242, 178, 121, 0.4);
+  --timeline-dot-shadow3: rgba(242, 178, 121, 0.2);
+
+  /* — Career heading gradient — */
+  --career-gradient-from: #D77A3D;
+  --career-gradient-to: #3B2A1A;
+
+  /* — Circle glow — */
+  --circle-bg: #F2B279;
+  --circle-shadow: rgba(242, 178, 121, 0.6);
+  --circle-blur: 60px;
+
+  /* — Character rim — */
+  --rim-bg: #F2B279;
+  --rim-shadow: rgba(215, 122, 61, 0.65);
+
+  /* — Tags / pills — */
+  --tag-bg: rgba(59, 42, 26, 0.1);
+  --tag-border: rgba(59, 42, 26, 0.25);
+
+  /* — Carousel — */
+  --carousel-border: #D6BA95;
+  --carousel-arrow-bg: rgba(59, 42, 26, 0.05);
+  --carousel-arrow-border: rgba(59, 42, 26, 0.15);
+  --carousel-arrow-color: #3B2A1A;
+  --carousel-arrow-hover-bg: rgba(215, 122, 61, 0.15);
+  --carousel-dot-hover-bg: rgba(215, 122, 61, 0.2);
+  --carousel-dot-active-shadow: rgba(215, 122, 61, 0.4);
+  --carousel-category-color: #8C6A4F;
+  --carousel-tools-color: #8C6A4F;
+
+  /* — Work link box — */
+  --work-link-shadow: rgba(0, 0, 0, 0.15);
+  --work-link-shadow-inset: #D6BA95;
+
+  /* — Contact social border — */
+  --contact-social-border: #D6BA95;
+
+  /* — Corner borders (What I Do) — */
+  --corner-border: #3B2A1A;
+  --what-dashed-stroke: #3B2A1A;
+  --what-arrow-border: #3B2A1A;
+
+  /* — Loading screen — */
+  --loading-screen-bg: #FFF7ED;
+  --loading-button-bg: #D77A3D;
+  --loading-button-glow: rgba(255, 255, 255, 0.3);
+  --loading-wrap-bg: #D77A3D;
+  --loading-hover-bg: #F2B279;
+  --loading-content-bg: #D77A3D;
+  --loading-ball-bg: #D77A3D;
+  --loading-box-bg: white;
+  --loading-line-bg: #3B2A1A;
+
+  /* — Social icons — */
+  --social-hover-color: var(--bg);
+  --resume-color: #6A4E3B;
+  --resume-hover: #3B2A1A;
+  --resume-icon-color: #3B2A1A;
+
+  /* — Legacy compat — */
+  --accentColor: #D77A3D;
+  --backgroundColor: #EAD1B0;
+
+
+  /* — Base type — */
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  color-scheme: light dark;
+  color: var(--text);
+  background-color: var(--bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  --vh: 100vh;
+  --vh: 100svh;
+}
+
+/* ═══════════════════════════════════════════════════
+   THEME TOKENS — Dark Mode
+   ═══════════════════════════════════════════════════ */
+.dark {
+  --bg: #0a0e17;
+  --bg-deep: #050810;
+  --surface: #0f1420;
+  --card: #141a28;
+
+  --text: #eae5ec;
+  --text-secondary: #b0a8b4;
+  --muted: #7a7280;
+
+  --accent: #5eead4;
+  --accent-hover: #2dd4bf;
+  --highlight: #a5f3fc;
+  --accent-glow: rgba(94, 234, 212, 0.25);
+
+  --border: #363636;
+  --shadow: rgba(0, 0, 0, 0.4);
+
+  --glass-bg: rgba(15, 20, 32, 0.6);
+  --glass-border: rgba(54, 54, 54, 0.5);
+
+  --timeline-color: #14b8a6;
+  --timeline-glow: #5eead4;
+  --timeline-dot-bg: #14b8a6;
+  --timeline-dot-shadow1: rgba(103, 232, 249, 0.6);
+  --timeline-dot-shadow2: rgba(94, 234, 212, 0.4);
+  --timeline-dot-shadow3: rgba(165, 243, 252, 0.2);
+
+  --career-gradient-from: #0d9488;
+  --career-gradient-to: #ffffff;
+
+  --circle-bg: #22d3ee;
+  --circle-shadow: rgba(0, 180, 180, 0.6);
+  --circle-blur: 60px;
+
+  --rim-bg: #22d3ee;
+  --rim-shadow: rgba(0, 180, 180, 0.65);
+
+  --tag-bg: rgba(255, 255, 255, 0.15);
+  --tag-border: rgba(255, 255, 255, 0.31);
+
+  --carousel-border: #363636;
+  --carousel-arrow-bg: rgba(255, 255, 255, 0.05);
+  --carousel-arrow-border: rgba(255, 255, 255, 0.1);
+  --carousel-arrow-color: #eae5ec;
+  --carousel-arrow-hover-bg: rgba(94, 234, 212, 0.15);
+  --carousel-dot-hover-bg: rgba(94, 234, 212, 0.2);
+  --carousel-dot-active-shadow: rgba(94, 234, 212, 0.4);
+  --carousel-category-color: #adacac;
+  --carousel-tools-color: #adacac;
+
+  --work-link-shadow: rgba(255, 255, 255, 0.5);
+  --work-link-shadow-inset: #393939;
+
+  --contact-social-border: #ccc;
+
+  --corner-border: #fff;
+  --what-dashed-stroke: white;
+  --what-arrow-border: #fff;
+
+  --loading-screen-bg: #e0f2f1;
+  --loading-button-bg: #000;
+  --loading-button-glow: #ffffff;
+  --loading-wrap-bg: #000;
+  --loading-hover-bg: #2dd4bf;
+  --loading-content-bg: #000;
+  --loading-ball-bg: #2dd4bf;
+  --loading-box-bg: white;
+  --loading-line-bg: #000;
+
+  --social-hover-color: var(--bg);
+  --resume-color: #5e5e5e;
+  --resume-hover: #fff;
+  --resume-icon-color: #fff;
+
+  --accentColor: #5eead4;
+  --backgroundColor: #0a0e17;
+}
+
+/* ═══════════════════════════════════════════════════
+   GLOBAL STYLES
+   ═══════════════════════════════════════════════════ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Geist", sans-serif;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  height: auto;
+  background-color: var(--bg-deep);
+  flex-grow: 1;
+  --cWidth: calc(100% - 30px);
+  --cMaxWidth: 1920px;
+  max-width: 100vw;
+  overflow-x: hidden;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--accentColor);
+}
+
+main {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.main-active {
+  opacity: 0;
+  animation: fadeIn 1s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+.main-body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.container-main {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  background-color: var(--bg);
+  transition: background-color 0.25s ease-out;
+}
+
+#smooth-wrapper,
+#smooth-content {
+  background-color: var(--bg);
+  transition: background-color 0.25s ease-out;
+}
+
+.container1 {
+  width: var(--cWidth);
+  height: var(--vh);
+  margin: auto;
+  position: relative;
+}
+
+.split-line {
+  overflow: hidden;
+}
+
+.split-h2 {
+  overflow: hidden;
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+
+.techstack {
+  width: 100%;
+  position: relative;
+  overflow: clip;
+  height: var(--vh);
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: -100px;
+}
+
+.techstack h2 {
+  font-size: 80px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 120px;
+  left: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    --cWidth: 94%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .techstack h2 {
+    font-size: 40px;
+  }
+}
